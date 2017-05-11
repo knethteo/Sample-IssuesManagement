@@ -1,0 +1,132 @@
+﻿@model WebApp_OpenIDConnect_DotNet_B2C.Models.Issue
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Issue</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueCategory.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueStatus.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Feedback)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Feedback)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Eta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Eta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Creator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Creator)
+        </dd>
+
+@if (!ViewBag.isCitizen)
+{
+    <dt>
+        @Html.DisplayNameFor(model => model.IssuePriority)
+    </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssuePriority.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueFieldAgent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueFieldAgent.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InternalComment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InternalComment)
+        </dd>
+}
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompletionTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompletionTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
+@*<td>
+    @Html.DisplayFor(modelItem => item.ImageUrl)
+    <img src="@Url.Content(item.ImagePath)" alt="Image" />
+    <a href="@Url.Content(item.ImageUrl)>
+</td>*@

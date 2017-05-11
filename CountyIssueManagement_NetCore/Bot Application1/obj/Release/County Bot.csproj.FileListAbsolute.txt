@@ -1,0 +1,46 @@
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Bot Application1.dll.config
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Bot Application1.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Bot Application1.pdb
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Autofac.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Chronic.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.Bot.Builder.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.Bot.Connector.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Newtonsoft.Json.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.Net.Http.Formatting.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.Web.Http.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.Web.Http.WebHost.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Autofac.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.Bot.Builder.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.Bot.Connector.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\Newtonsoft.Json.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.Net.Http.Formatting.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.Web.Http.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\System.Web.Http.WebHost.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\obj\Release\County Bot.csprojResolveAssemblyReference.cache
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\obj\Release\Bot Application1.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\obj\Release\Bot Application1.pdb
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\EntityFramework.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\EntityFramework.SqlServer.dll
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\EntityFramework.xml
+C:\Users\kennetht\Source\Workspaces\Developing Apps the Microsoft Way - Team 1\CountyIssueManagement_NetCore\Bot Application1\bin\EntityFramework.SqlServer.xml

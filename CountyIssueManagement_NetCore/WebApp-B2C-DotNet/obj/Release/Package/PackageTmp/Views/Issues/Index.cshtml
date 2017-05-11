@@ -1,0 +1,81 @@
+﻿@model IEnumerable<WebApp_OpenIDConnect_DotNet_B2C.Models.Issue>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IssueCategory.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IssuePriority.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IssueStatus.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Eta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Creator)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    string style = item.IssueCategory.Name.ToString() == "Pothole" ? "background-color:Red" : null;
+    <tr style="@style">
+        
+    
+        <td>
+            @Html.DisplayFor(modelItem => item.IssueCategory.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IssueStatus.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Eta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Creator)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InternalComment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreationTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,97 @@
+﻿@model IEnumerable<WebApp_OpenIDConnect_DotNet_B2C.Models.Issue>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IssueCategory.Name)
+        </th>
+@if (!ViewBag.isCitizen)
+{
+        <th>
+            @Html.DisplayNameFor(model => model.IssuePriority.Name)
+        </th>
+}
+        <th>
+            @Html.DisplayNameFor(model => model.IssueStatus.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Eta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Creator)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreationTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Feedback)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IssueCategory.Name)
+        </td>
+ @if (!ViewBag.isCitizen)
+ {
+       <td>
+            @Html.DisplayFor(modelItem => item.IssuePriority.Name)
+           @if (item.IssuePriorityId == 1)
+           {
+               <img src="http://findicons.com/files/icons/1951/iconza/32/warning.png" />
+           }
+       </td>
+ }
+        <td>
+            @Html.DisplayFor(modelItem => item.IssueStatus.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Eta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Creator)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreationTime)
+        </td>
+        <td align="center">
+            @if (!string.IsNullOrWhiteSpace(item.Feedback))
+            {
+                <img src="http://findicons.com/files/icons/2218/comfi_telecom/32/feedback.png" />
+            }
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id })
+ @*           @Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+        </td>
+    </tr>
+}
+
+</table>

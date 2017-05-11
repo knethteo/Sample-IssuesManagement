@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IssueManagementDbContext-Web.config Connection String" description="IssueManagementDbContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:county.database.windows.net,1433;Initial Catalog=IssuesManagement;Persist Security Info=False;User ID=Localadmin;Password=P@ssw0rdp[]\;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\kennetht\\Source\\Workspaces\\Developing\ Apps\ the\ Microsoft\ Way\ -\ Team\ 1\\CountyIssueManagement_NetCore\\WebApp-B2C-DotNet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IssueManagementDbContext']/@connectionString" />
+  </parameter>
+</parameters>

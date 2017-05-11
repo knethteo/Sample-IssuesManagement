@@ -1,0 +1,226 @@
+﻿@model WebApp_OpenIDConnect_DotNet_B2C.Models.Issue
+@using System.Security.Claims
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <script type="text/javascript">
+
+    //var x = document.getElementById("demo");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        }
+    }
+
+    function showPosition(position) {
+        document.getElementById("latitude").value = position.coords.latitude;
+        document.getElementById("longitude").value = position.coords.longitude;
+
+        //var latlondata = position.coords.latitude + "," + position.coords.longitude;
+        //var latlon = "Your Latitude Position is:=" + position.coords.latitude + "," + "Your Longitude Position is:="  +position.coords.longitude;
+        //alert(latlon)
+        //var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="  + latlondata + "&zoom=14&size=400x300&sensor=false";
+        //document.getElementById("mapholder").innerHTML = "<img src='" + img_url + "' />";
+    }
+
+    function showError(error) {
+        //if (error.code == 1) {
+        //    x.innerHTML = "User denied the request for Geolocation."
+        //}
+        //else if (err.code == 2) {
+        //    x.innerHTML = "Location information is unavailable."
+        //}
+        //else if (err.code == 3) {
+        //    x.innerHTML = "The request to get user location timed out."
+        //}
+        //else {
+        //    x.innerHTML = "An unknown error occurred."
+        //}
+    }
+
+    </script>
+
+    <div class="form-horizontal">
+        <h4>Issue</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.IssueCategoryId, "Category", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IssueCategoryId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IssueCategoryId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.IssuePriorityId, "Priority", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IssuePriorityId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IssuePriorityId, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Location, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Latitude, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Latitude, new { htmlAttributes = new { @id="latitude", @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.Latitude, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Longitude, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Longitude, new { htmlAttributes = new { @id = "longitude", @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.Longitude, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.Feedback, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Feedback, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Feedback, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div style="display:none" class="form-group">
+            @Html.LabelFor(model => model.IssueStatusId, "Status", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.DropDownList("IssueStatusId", null, htmlAttributes: new { @class = "form-control", @readonly = true})*@
+                @Html.EditorFor(model => model.IssueStatusId, new { htmlAttributes = new { @class = "form-control", @Value = 1, @readonly = true } })
+                @Html.ValidationMessageFor(model => model.IssueStatusId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div style="display:none" class="form-group">
+            @Html.LabelFor(model => model.Eta, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Eta, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Eta, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Creator, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Creator, new { htmlAttributes = new { @class = "form-control", @Value = ViewBag.email, @readonly = true } })
+                @Html.ValidationMessageFor(model => model.Creator, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImageUrl, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ImageUrl, new { htmlAttributes = new { @class = "form-control", @Value= ViewBag.imguri, @readonly = true } })
+                @Html.ValidationMessageFor(model => model.InternalComment, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @if (!ViewBag.isCitizen)
+        {
+        <div class="form-group">
+            @Html.LabelFor(model => model.InternalComment, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.InternalComment, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.InternalComment, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        }
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.CreationTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CreationTime, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CreationTime, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        @*<fieldset class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Photo">Photo</label>
+                <div class="col-md-10">
+                    <input type="file" name="UploadFile" id="UploadFile" style="width: 100%;" />
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Submit" class="btn" />
+                </div>
+
+            </div>
+        </fieldset>*@
+   
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        getLocation();
+    </script>
+
+}
+
+@using (Html.BeginForm("FileUpload", "Issues", FormMethod.Post,
+                                                            new { enctype = "multipart/form-data" }))
+{
+    <fieldset class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Photo">Photo</label>
+            <div class="col-md-10">
+                <input type="file" name="UploadFile" id="UploadFile" style="width: 100%;" />
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class="col-md-11">
+                <input type="submit" value="Submit" class="btn" />
+            </div>
+
+        </div>
+    </fieldset>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
